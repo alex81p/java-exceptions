@@ -32,7 +32,7 @@ public class App {
                             new Group(202L, Arrays.asList(
                                     new Student(4L, "Mikhail","Mikhailov", Arrays.asList(
                                             new ExamResult(Subject.PHYSICS, 10),
-                                            new ExamResult(Subject.MATHEMATICS,9)
+                                            new ExamResult(Subject.MATHEMATICS,8)
                                     ))
                             ))
                     ))));
@@ -43,7 +43,7 @@ public class App {
 
         Long studentId = 1L;
         Long groupId = 101L;
-        String facultyName = "Faculty of Physics";
+        String facultyName = "Faculty of Economics";
         Subject subject = Subject.MATHEMATICS;
 
         System.out.println("Average academic performance of students:");

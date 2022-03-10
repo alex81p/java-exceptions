@@ -8,6 +8,9 @@ public class ExamResult {
     private Subject subject;
     private int grade;
 
+    public ExamResult() {
+    }
+
     public ExamResult(Subject subject, int grade) throws InvalidGradeException {
         if (grade < 0 || grade > 10) {
             throw new InvalidGradeException("Invalid grade");

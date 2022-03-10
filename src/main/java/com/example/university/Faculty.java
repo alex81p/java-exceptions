@@ -13,8 +13,12 @@ public class Faculty implements IAverageGrade {
     private String name;
     private List<Group> groups;
 
-    public Faculty(String name) {
+    public Faculty() {
+    }
+
+    public Faculty(String name, List<Group> groups) {
         this.name = name;
+        this.groups = groups;
     }
 
     public String getName() {
@@ -33,11 +37,6 @@ public class Faculty implements IAverageGrade {
     }
 
     public void setGroups(List<Group> groups) {
-        this.groups = groups;
-    }
-
-    public Faculty(String name, List<Group> groups) {
-        this.name = name;
         this.groups = groups;
     }
 

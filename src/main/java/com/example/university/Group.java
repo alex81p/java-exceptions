@@ -10,8 +10,7 @@ public class Group implements IAverageGrade {
     private Long id;
     private List<Student> students;
 
-    public Group(Long id) {
-        this.id = id;
+    public Group() {
     }
 
     public Group(Long id, List<Student> students) {
@@ -66,8 +65,7 @@ public class Group implements IAverageGrade {
                     try {
                         return student.getExamResults().stream();
                     } catch (StudentHasNoSubjectsException e) {
-                        e.printStackTrace();
-                        return null;
+                        return Stream.empty();
                     }
                 })
                 .mapToDouble(ExamResult::getGrade)
@@ -84,7 +82,6 @@ public class Group implements IAverageGrade {
                     try {
                         return student.getExamResults().stream();
                     } catch (StudentHasNoSubjectsException e) {
-                        e.printStackTrace();
                         return Stream.empty();
                     }
                 })
