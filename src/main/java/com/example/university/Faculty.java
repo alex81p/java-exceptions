@@ -9,7 +9,7 @@ import java.util.Objects;
 import java.util.OptionalDouble;
 import java.util.stream.Stream;
 
-public class Faculty implements IAverageGrade {
+public class Faculty extends UniversityEntity {
     private String name;
     private List<Group> groups;
 

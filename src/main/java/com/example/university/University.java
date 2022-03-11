@@ -8,7 +8,7 @@ import com.example.exceptions.UniversityHasNoFacultiesException;
 import java.util.*;
 import java.util.stream.Stream;
 
-public class University implements IAverageGrade {
+public class University extends UniversityEntity {
     private List<Faculty> faculties;
 
     public University() {

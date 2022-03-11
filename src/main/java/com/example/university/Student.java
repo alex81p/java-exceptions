@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.OptionalDouble;
 
-public class Student implements IAverageGrade {
+public class Student extends UniversityEntity {
     private Long id;
     private String firstName;
     private String lastName;

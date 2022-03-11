@@ -6,7 +6,7 @@ import com.example.exceptions.StudentHasNoSubjectsException;
 import java.util.*;
 import java.util.stream.Stream;
 
-public class Group implements IAverageGrade {
+public class Group extends UniversityEntity {
     private Long id;
     private List<Student> students;
 
